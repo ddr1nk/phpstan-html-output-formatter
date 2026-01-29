@@ -1,0 +1,11 @@
+/vendor/
+/.phpstan.result.cache
+/.phpstan-cache/
+/.phpunit.result.cache
+/.idea/
+/.vscode/
+/.DS_Store
+Thumbs.db
+*.log
+*.tmp
+phpstan-report.html

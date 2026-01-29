@@ -1,0 +1,922 @@
+{
+  "totals": {
+    "errors": 0,
+    "file_errors": 138
+  },
+  "files": {
+    "/opt/www/local/php_interface/Irao/Handler/AgreementHighloadBlockEventHandlers.php": {
+      "errors": 32,
+      "messages": [
+        {
+          "message": "Method Irao\\Handler\\AgreementHighloadBlockEventHandlers::getService() has invalid return type Irao\\Agreements\\Services\\AgreementService.",
+          "line": 21,
+          "ignorable": true,
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Class Irao\\Agreements\\Services\\AgreementService not found.",
+          "line": 23,
+          "ignorable": true,
+          "tip": "Learn more at https://phpstan.org/user-guide/discovering-symbols",
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Method Irao\\Handler\\AgreementHighloadBlockEventHandlers::getService() should return Irao\\Agreements\\Services\\AgreementService but returns mixed.",
+          "line": 23,
+          "ignorable": true,
+          "identifier": "return.type"
+        },
+        {
+          "message": "Cannot access offset 'UF_IS_PUBLISHED' on mixed.",
+          "line": 31,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 31,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Call to method getActiveUserAgreement() on an unknown class Irao\\Agreements\\Services\\AgreementService.",
+          "line": 32,
+          "ignorable": true,
+          "tip": "Learn more at https://phpstan.org/user-guide/discovering-symbols",
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Cannot access offset 'UF_DATE_START' on mixed.",
+          "line": 39,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $fields of method Bitrix\\Main\\ORM\\EventResult::modifyFields() expects array, mixed given.",
+          "line": 42,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Cannot access offset 'UF_IS_PUBLISHED' on mixed.",
+          "line": 52,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 52,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Call to method createNewUserAgreement() on an unknown class Irao\\Agreements\\Services\\AgreementService.",
+          "line": 53,
+          "ignorable": true,
+          "tip": "Learn more at https://phpstan.org/user-guide/discovering-symbols",
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Cannot access offset 'UF_TEXT' on mixed.",
+          "line": 53,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to string.",
+          "line": 53,
+          "ignorable": true,
+          "identifier": "cast.string"
+        },
+        {
+          "message": "Cannot access offset 'ID' on mixed.",
+          "line": 63,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 63,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Instantiated class Irao\\Agreements\\Repository\\AgreementRepository not found.",
+          "line": 65,
+          "ignorable": true,
+          "tip": "Learn more at https://phpstan.org/user-guide/discovering-symbols",
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Call to method getActiveUserAgreement() on an unknown class Irao\\Agreements\\Services\\AgreementService.",
+          "line": 66,
+          "ignorable": true,
+          "tip": "Learn more at https://phpstan.org/user-guide/discovering-symbols",
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Cannot access offset 'UF_IS_PUBLISHED' on mixed.",
+          "line": 67,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 67,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Call to method findUserAgreementById() on an unknown class Irao\\Agreements\\Repository\\AgreementRepository.",
+          "line": 69,
+          "ignorable": true,
+          "tip": "Learn more at https://phpstan.org/user-guide/discovering-symbols",
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Cannot access offset 'UF_IS_PUBLISHED' on mixed.",
+          "line": 70,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 70,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Cannot access offset 'UF_DATE_START' on mixed.",
+          "line": 82,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $fields of method Bitrix\\Main\\ORM\\EventResult::modifyFields() expects array, mixed given.",
+          "line": 85,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Cannot access offset 'ID' on mixed.",
+          "line": 93,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 93,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Call to method getUserAgreement() on an unknown class Irao\\Agreements\\Services\\AgreementService.",
+          "line": 95,
+          "ignorable": true,
+          "tip": "Learn more at https://phpstan.org/user-guide/discovering-symbols",
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Cannot access offset 'UF_IS_PUBLISHED' on mixed.",
+          "line": 96,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 96,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Call to method createNewUserAgreement() on an unknown class Irao\\Agreements\\Services\\AgreementService.",
+          "line": 97,
+          "ignorable": true,
+          "tip": "Learn more at https://phpstan.org/user-guide/discovering-symbols",
+          "identifier": "class.notFound"
+        },
+        {
+          "message": "Cannot access offset 'UF_TEXT' on mixed.",
+          "line": 97,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to string.",
+          "line": 97,
+          "ignorable": true,
+          "identifier": "cast.string"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Handler/Event.php": {
+      "errors": 29,
+      "messages": [
+        {
+          "message": "Method Irao\\Handler\\Event::preparationEmailTemplate() has parameter $fields with no value type specified in iterable type array.",
+          "line": 35,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Cannot call method exec() on mixed.",
+          "line": 37,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot call method fetch() on mixed.",
+          "line": 37,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot access offset 'EMAIL_TO' on mixed.",
+          "line": 48,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $text of static method Irao\\Handler\\Event::replace() expects string, mixed given.",
+          "line": 53,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Unsafe call to private method Irao\\Handler\\Event::replace() through static::.",
+          "line": 53,
+          "ignorable": true,
+          "identifier": "staticClassAccess.privateMethod"
+        },
+        {
+          "message": "Cannot access offset 'SUBJECT' on mixed.",
+          "line": 54,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $text of static method Irao\\Handler\\Event::replace() expects string, mixed given.",
+          "line": 54,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Unsafe call to private method Irao\\Handler\\Event::replace() through static::.",
+          "line": 54,
+          "ignorable": true,
+          "identifier": "staticClassAccess.privateMethod"
+        },
+        {
+          "message": "Cannot access offset 'MESSAGE' on mixed.",
+          "line": 55,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $text of static method Irao\\Handler\\Event::replace() expects string, mixed given.",
+          "line": 55,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Unsafe call to private method Irao\\Handler\\Event::replace() through static::.",
+          "line": 55,
+          "ignorable": true,
+          "identifier": "staticClassAccess.privateMethod"
+        },
+        {
+          "message": "Method Irao\\Handler\\Event::preparationSmsTemplate() has parameter $fields with no value type specified in iterable type array.",
+          "line": 59,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Handler\\Event::preparationSmsTemplate() return type has no value type specified in iterable type array.",
+          "line": 59,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Cannot call method exec() on mixed.",
+          "line": 61,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot call method fetch() on mixed.",
+          "line": 61,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot access offset 'RECEIVER' on mixed.",
+          "line": 72,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot access offset 'SENDER' on mixed.",
+          "line": 77,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $text of static method Irao\\Handler\\Event::replace() expects string, mixed given.",
+          "line": 77,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Unsafe call to private method Irao\\Handler\\Event::replace() through static::.",
+          "line": 77,
+          "ignorable": true,
+          "identifier": "staticClassAccess.privateMethod"
+        },
+        {
+          "message": "Parameter #1 $text of static method Irao\\Handler\\Event::replace() expects string, mixed given.",
+          "line": 78,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Unsafe call to private method Irao\\Handler\\Event::replace() through static::.",
+          "line": 78,
+          "ignorable": true,
+          "identifier": "staticClassAccess.privateMethod"
+        },
+        {
+          "message": "Cannot access offset 'MESSAGE' on mixed.",
+          "line": 79,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $text of static method Irao\\Handler\\Event::replace() expects string, mixed given.",
+          "line": 79,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Unsafe call to private method Irao\\Handler\\Event::replace() through static::.",
+          "line": 79,
+          "ignorable": true,
+          "identifier": "staticClassAccess.privateMethod"
+        },
+        {
+          "message": "Method Irao\\Handler\\Event::isAlwaysSendEvent() has parameter $eventName with no type specified.",
+          "line": 83,
+          "ignorable": true,
+          "identifier": "missingType.parameter"
+        },
+        {
+          "message": "Method Irao\\Handler\\Event::replace() has parameter $fields with no value type specified in iterable type array.",
+          "line": 88,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Cannot cast mixed to string.",
+          "line": 91,
+          "ignorable": true,
+          "identifier": "cast.string"
+        },
+        {
+          "message": "Method Irao\\Handler\\Event::replace() should return string but returns string|null.",
+          "line": 94,
+          "ignorable": true,
+          "identifier": "return.type"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Helpers/HighloadBlock/HighloadBlockHelper.php": {
+      "errors": 19,
+      "messages": [
+        {
+          "message": "Property Irao\\Helpers\\HighloadBlock\\HighloadBlockHelper::$idsCache type has no value type specified in iterable type array.",
+          "line": 25,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Helpers\\HighloadBlock\\HighloadBlockHelper::getId() has parameter $code with no type specified.",
+          "line": 37,
+          "ignorable": true,
+          "identifier": "missingType.parameter"
+        },
+        {
+          "message": "Possibly invalid array key type mixed.",
+          "line": 39,
+          "ignorable": true,
+          "identifier": "offsetAccess.invalidOffset"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 40,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Possibly invalid array key type mixed.",
+          "line": 40,
+          "ignorable": true,
+          "identifier": "offsetAccess.invalidOffset"
+        },
+        {
+          "message": "Possibly invalid array key type mixed.",
+          "line": 43,
+          "ignorable": true,
+          "identifier": "offsetAccess.invalidOffset"
+        },
+        {
+          "message": "Possibly invalid array key type mixed.",
+          "line": 46,
+          "ignorable": true,
+          "identifier": "offsetAccess.invalidOffset"
+        },
+        {
+          "message": "Method Irao\\Helpers\\HighloadBlock\\HighloadBlockHelper::getHlIdByCode() has parameter $filterArr with no value type specified in iterable type array.",
+          "line": 62,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Helpers\\HighloadBlock\\HighloadBlockHelper::getHlIdByCode() should return string|null but returns mixed.",
+          "line": 64,
+          "ignorable": true,
+          "identifier": "return.type"
+        },
+        {
+          "message": "Method Irao\\Helpers\\HighloadBlock\\HighloadBlockHelper::getDataManager() has parameter $hlBlockCode with no type specified.",
+          "line": 79,
+          "ignorable": true,
+          "identifier": "missingType.parameter"
+        },
+        {
+          "message": "Parameter #1 $hlblock of static method Bitrix\\Highloadblock\\HighloadBlockTable::compileEntity() expects array|int|string, array|false given.",
+          "line": 93,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Cannot access offset '_ID' on mixed.",
+          "line": 98,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot call method exec() on mixed.",
+          "line": 98,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot call method fetch() on mixed.",
+          "line": 98,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 98,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Cannot access offset '_XML_ID' on mixed.",
+          "line": 116,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot call method exec() on mixed.",
+          "line": 116,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot call method fetch() on mixed.",
+          "line": 116,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Method Irao\\Helpers\\HighloadBlock\\HighloadBlockHelper::getEnumXmlIdById() should return string but returns mixed.",
+          "line": 116,
+          "ignorable": true,
+          "identifier": "return.type"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Helpers/Log/Logger.php": {
+      "errors": 18,
+      "messages": [
+        {
+          "message": "Property Irao\\Helpers\\Log\\Logger::$moduleCacheByFile type has no value type specified in iterable type array.",
+          "line": 28,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Helpers\\Log\\Logger::configure() has no return type specified.",
+          "line": 30,
+          "ignorable": true,
+          "identifier": "missingType.return"
+        },
+        {
+          "message": "Method Irao\\Helpers\\Log\\Logger::sendLog() has parameter $context with no value type specified in iterable type array.",
+          "line": 100,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Cannot access offset 'is_absolute' on mixed.",
+          "line": 129,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot access offset 'debug' on mixed.",
+          "line": 130,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $string of function ltrim expects string, mixed given.",
+          "line": 130,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Match expression does not handle remaining value: string",
+          "line": 145,
+          "ignorable": true,
+          "identifier": "match.unhandled"
+        },
+        {
+          "message": "Cannot access offset 'error' on mixed.",
+          "line": 148,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot access offset 'info' on mixed.",
+          "line": 149,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot access offset 'debug' on mixed.",
+          "line": 150,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot access offset 'warning' on mixed.",
+          "line": 151,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Binary operation \".\" between string|null and mixed results in an error.",
+          "line": 157,
+          "ignorable": true,
+          "identifier": "binaryOp.invalid"
+        },
+        {
+          "message": "Cannot access offset 'is_absolute' on mixed.",
+          "line": 157,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #3 ...$values of function sprintf expects bool|float|int|string|null, mixed given.",
+          "line": 165,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Method Irao\\Helpers\\Log\\Logger::logException() has parameter $context with no value type specified in iterable type array.",
+          "line": 173,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Helpers\\Log\\Logger::detectCaller() return type has no value type specified in iterable type array.",
+          "line": 196,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Offset 'function' on array{function: string, line?: int, file?: string, class: 'Irao\\\\Helpers\\\\Log\\\\Logger', type?: '->'|'::', args?: list<mixed>, object?: object} on left side of ?? always exists and is not nullable.",
+          "line": 206,
+          "ignorable": true,
+          "identifier": "nullCoalesce.offset"
+        },
+        {
+          "message": "Parameter #1 $string of function rtrim expects string, mixed given.",
+          "line": 249,
+          "ignorable": true,
+          "identifier": "argument.type"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Helpers/SiteHelper.php": {
+      "errors": 3,
+      "messages": [
+        {
+          "message": "Cannot call method Fetch() on mixed.",
+          "line": 30,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot access offset 'SERVER_NAME' on mixed.",
+          "line": 31,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #3 ...$values of function sprintf expects bool|float|int|string|null, mixed given.",
+          "line": 37,
+          "ignorable": true,
+          "identifier": "argument.type"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Models/Orm/UserFieldEnumTable.php": {
+      "errors": 1,
+      "messages": [
+        {
+          "message": "Method Irao\\Models\\Orm\\UserFieldEnumTable::getMap() return type has no value type specified in iterable type array.",
+          "line": 27,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Models/Orm/UserFieldTable.php": {
+      "errors": 5,
+      "messages": [
+        {
+          "message": "Method Irao\\Models\\Orm\\UserFieldTable::getMap() return type has no value type specified in iterable type array.",
+          "line": 53,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Models\\Orm\\UserFieldTable::validateEntityId() return type has no value type specified in iterable type array.",
+          "line": 108,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Models\\Orm\\UserFieldTable::validateFieldName() return type has no value type specified in iterable type array.",
+          "line": 121,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Models\\Orm\\UserFieldTable::validateUserTypeId() return type has no value type specified in iterable type array.",
+          "line": 134,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Models\\Orm\\UserFieldTable::validateXmlId() return type has no value type specified in iterable type array.",
+          "line": 147,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Services/CaptchaService.php": {
+      "errors": 18,
+      "messages": [
+        {
+          "message": "Method Irao\\Services\\CaptchaService::isCaptchaRequiredForUser() has parameter $user with no value type specified in iterable type array.",
+          "line": 24,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 26,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Cannot call method findByContact() on mixed.",
+          "line": 31,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot access offset 'ATTEMPTS_CHECKED' on mixed.",
+          "line": 33,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 33,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Unsafe access to private constant Irao\\Services\\CaptchaService::MAX_ATTEMPTS_BEFORE_CAPTCHA through static::.",
+          "line": 33,
+          "ignorable": true,
+          "identifier": "staticClassAccess.privateConstant"
+        },
+        {
+          "message": "Cannot call method findByContact() on mixed.",
+          "line": 38,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Cannot access offset 'ATTEMPTS' on mixed.",
+          "line": 40,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Cannot cast mixed to int.",
+          "line": 40,
+          "ignorable": true,
+          "identifier": "cast.int"
+        },
+        {
+          "message": "Unsafe access to private constant Irao\\Services\\CaptchaService::MAX_ATTEMPTS_BEFORE_CAPTCHA through static::.",
+          "line": 40,
+          "ignorable": true,
+          "identifier": "staticClassAccess.privateConstant"
+        },
+        {
+          "message": "Method Irao\\Services\\CaptchaService::generate() return type has no value type specified in iterable type array.",
+          "line": 43,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Cannot call method CaptchaGetCode() on mixed.",
+          "line": 46,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        },
+        {
+          "message": "Using nullsafe method call on non-nullable type Bitrix\\Main\\Context. Use -> instead.",
+          "line": 48,
+          "ignorable": true,
+          "identifier": "nullsafe.neverNull"
+        },
+        {
+          "message": "Binary operation \".\" between 'http://'|'https://' and mixed results in an error.",
+          "line": 49,
+          "ignorable": true,
+          "identifier": "binaryOp.invalid"
+        },
+        {
+          "message": "Binary operation \".\" between non-falsy-string and mixed results in an error.",
+          "line": 49,
+          "ignorable": true,
+          "identifier": "binaryOp.invalid"
+        },
+        {
+          "message": "Call to an undefined method Bitrix\\Main\\Request::isHttps().",
+          "line": 49,
+          "ignorable": true,
+          "identifier": "method.notFound"
+        },
+        {
+          "message": "Method Irao\\Services\\CaptchaService::verify() has parameter $captcha with no value type specified in iterable type array.",
+          "line": 60,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Cannot call method CaptchaCheckCode() on mixed.",
+          "line": 67,
+          "ignorable": true,
+          "identifier": "method.nonObject"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Services/GrayLogService.php": {
+      "errors": 5,
+      "messages": [
+        {
+          "message": "Method Irao\\Services\\GrayLogService::initialize() has no return type specified.",
+          "line": 11,
+          "ignorable": true,
+          "identifier": "missingType.return"
+        },
+        {
+          "message": "Method Irao\\Services\\GrayLogService::initialize() has parameter $options with no value type specified in iterable type array.",
+          "line": 11,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Method Irao\\Services\\GrayLogService::write() has no return type specified.",
+          "line": 13,
+          "ignorable": true,
+          "identifier": "missingType.return"
+        },
+        {
+          "message": "Method Irao\\Services\\GrayLogService::write() has parameter $exception with no type specified.",
+          "line": 13,
+          "ignorable": true,
+          "identifier": "missingType.parameter"
+        },
+        {
+          "message": "Method Irao\\Services\\GrayLogService::write() has parameter $logType with no type specified.",
+          "line": 13,
+          "ignorable": true,
+          "identifier": "missingType.parameter"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Services/MailService.php": {
+      "errors": 5,
+      "messages": [
+        {
+          "message": "Method Irao\\Services\\MailService::sendMail() has parameter $fileIds with no value type specified in iterable type array.",
+          "line": 22,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Cannot access offset 'ORIGINAL_NAME' on mixed.",
+          "line": 73,
+          "ignorable": true,
+          "identifier": "offsetAccess.nonOffsetAccessible"
+        },
+        {
+          "message": "Parameter #1 $img_id of static method CFile::GetPath() expects int, mixed given.",
+          "line": 73,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Parameter #2 $name of method PHPMailer\\PHPMailer\\PHPMailer::addAttachment() expects string, mixed given.",
+          "line": 73,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Parameter #2 $message of static method Irao\\Helpers\\Log\\Logger::sendLog() expects string, mixed given.",
+          "line": 89,
+          "ignorable": true,
+          "identifier": "argument.type"
+        }
+      ]
+    },
+    "/opt/www/local/php_interface/Irao/Services/SmsService.php": {
+      "errors": 3,
+      "messages": [
+        {
+          "message": "Method Irao\\Services\\SmsService::sendSmsByTemplate() has parameter $smsFields with no value type specified in iterable type array.",
+          "line": 102,
+          "ignorable": true,
+          "tip": "See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type",
+          "identifier": "missingType.iterableValue"
+        },
+        {
+          "message": "Parameter #1 $phone of method Irao\\Services\\SmsService::sendSms() expects string, mixed given.",
+          "line": 125,
+          "ignorable": true,
+          "identifier": "argument.type"
+        },
+        {
+          "message": "Parameter #2 $message of method Irao\\Services\\SmsService::sendSms() expects string, mixed given.",
+          "line": 126,
+          "ignorable": true,
+          "identifier": "argument.type"
+        }
+      ]
+    }
+  },
+  "errors": []
+}

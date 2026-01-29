@@ -1,0 +1,3 @@
+services:
+    errorFormatter.html:
+        class: Rusde\PhpstanHtmlOutputFormatter\HtmlErrorFormatter

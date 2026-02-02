@@ -1,10 +1,11 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
+{literal}
   (function () {
     const ctx = document.getElementById("errorTypeChart");
     if (!ctx) return;
-    const labels = {$errorTypeLabelsJson nofilter};
-    const data = {$errorTypeDataJson nofilter};
+    const labels = {/literal}{$errorTypeLabelsJson nofilter}{literal};
+    const data = {/literal}{$errorTypeDataJson nofilter}{literal};
     if (labels.length === 0) return;
     new Chart(ctx, {
       type: "doughnut",
@@ -87,4 +88,5 @@
     sizeSelect.addEventListener('change', () => { current = 1; render(); });
     render();
   })();
+{/literal}
 </script>

@@ -3,4 +3,3 @@ services:
         class: DDr1nk\PhpstanHtmlOutputFormatter\HtmlErrorFormatter
         arguments:
             level: %level%?
-            levelFromParameters: %parameters.level%?

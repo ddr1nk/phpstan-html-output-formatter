@@ -15,9 +15,9 @@ final class HtmlErrorFormatter implements ErrorFormatter
 {
     private ?string $level;
 
-    public function __construct(?string $level = null, ?string $levelFromParameters = null)
+    public function __construct(?string $level = null)
     {
-        $this->level = $level ?? $levelFromParameters;
+        $this->level = $level;
     }
 
     public function formatErrors(AnalysisResult $analysisResult, Output $output): int

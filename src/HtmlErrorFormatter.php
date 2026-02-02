@@ -132,8 +132,12 @@ final class HtmlErrorFormatter implements ErrorFormatter
 
         $html = $smarty->fetch('layout.tpl');
 
-        $this->writeReportToDir($html, $generatedAt);
-        $output->writeRaw($html);
+        $reportPath = $this->writeReportToDir($html, $generatedAt);
+        if ($this->shouldWriteStdout()) {
+            $output->writeRaw($html);
+        } else {
+            $output->writeRaw('HTML report saved to: ' . $reportPath . PHP_EOL);
+        }
 
         return $analysisResult->hasErrors() || $analysisResult->hasInternalErrors() ? 1 : 0;
     }
@@ -194,12 +198,13 @@ final class HtmlErrorFormatter implements ErrorFormatter
         return $path;
     }
 
-    private function writeReportToDir(string $html, DateTimeImmutable $generatedAt): void
+    private function writeReportToDir(string $html, DateTimeImmutable $generatedAt): string
     {
         $dir = $this->ensureDir($this->resolveOutputDir());
         $fileName = 'phpstan-report-' . $generatedAt->format('Ymd-His') . '.html';
         $path = rtrim($dir, '/\\') . DIRECTORY_SEPARATOR . $fileName;
         file_put_contents($path, $html);
+        return $path;
     }
 
     private function resolveOutputDir(): string
@@ -213,5 +218,10 @@ final class HtmlErrorFormatter implements ErrorFormatter
         $base = $cwd !== false ? $cwd : sys_get_temp_dir();
 
         return rtrim($base, '/\\') . DIRECTORY_SEPARATOR . 'phpstan-reports';
+    }
+
+    private function shouldWriteStdout(): bool
+    {
+        return getenv('PHPSTAN_HTML_OUTPUT_STDOUT') === '1';
     }
 }

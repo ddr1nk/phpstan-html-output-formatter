@@ -38,7 +38,7 @@ final class HtmlErrorFormatter implements ErrorFormatter
             $errorTypeCounts[$typeKey] = ($errorTypeCounts[$typeKey] ?? 0) + 1;
         }
         foreach ($notFileErrors as $error) {
-            $identifier = $error->getIdentifier();
+            $identifier = $error instanceof Error ? $error->getIdentifier() : null;
             $typeKey = $identifier !== null ? $identifier : 'general';
             $errorTypeCounts[$typeKey] = ($errorTypeCounts[$typeKey] ?? 0) + 1;
         }
@@ -79,11 +79,21 @@ final class HtmlErrorFormatter implements ErrorFormatter
 
         $notFileErrorsView = [];
         foreach ($notFileErrors as $error) {
+            if ($error instanceof Error) {
+                $notFileErrorsView[] = [
+                    'line' => $error->getLine(),
+                    'identifier' => $error->getIdentifier(),
+                    'message' => $error->getMessage(),
+                    'tip' => $error->getTip(),
+                ];
+                continue;
+            }
+
             $notFileErrorsView[] = [
-                'line' => $error->getLine(),
-                'identifier' => $error->getIdentifier(),
-                'message' => $error->getMessage(),
-                'tip' => $error->getTip(),
+                'line' => null,
+                'identifier' => null,
+                'message' => (string) $error,
+                'tip' => null,
             ];
         }
 

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace DDr1nk\PhpstanHtmlOutputFormatter;
 
 use PHPStan\Analyser\Error;
-use PHPStan\Analyser\InternalError;
 use PHPStan\Command\AnalysisResult;
 use PHPStan\Command\ErrorFormatter\ErrorFormatter;
 use PHPStan\Command\Output;
-use Smarty;
-
+use Smarty\Smarty;
 
 final class HtmlErrorFormatter implements ErrorFormatter
 {

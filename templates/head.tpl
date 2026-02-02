@@ -40,6 +40,9 @@
     .section { margin-top: 24px; }
     .file { margin-top: 16px; padding: 14px 16px; background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px; }
     .file-header { display: flex; gap: 12px; align-items: center; justify-content: flex-start; }
+    .copy-btn { border: 1px solid var(--border); background: var(--panel); color: var(--muted); border-radius: 6px; padding: 2px 6px; cursor: pointer; font-size: 12px; }
+    .copy-btn:hover { color: var(--text); }
+    .copy-btn:active { transform: translateY(1px); }
     .file summary { cursor: pointer; list-style: none; }
     .file summary::-webkit-details-marker { display: none; }
     .file summary::after { content: "▸"; color: var(--muted); font-size: 14px; margin-left: auto; transition: transform 0.15s ease; }

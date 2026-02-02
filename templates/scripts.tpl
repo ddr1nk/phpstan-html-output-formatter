@@ -90,6 +90,19 @@
     filterInput.addEventListener('input', () => { current = 1; render(); });
     sizeSelect.addEventListener('change', () => { current = 1; render(); });
     render();
+
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof HTMLElement)) return;
+      if (!target.matches('[data-copy-file="true"]')) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const block = target.closest('[data-file-name]');
+      if (!block) return;
+      const fileName = block.getAttribute('data-file-name') || '';
+      if (fileName === '') return;
+      navigator.clipboard?.writeText(fileName);
+    });
   })();
 {/literal}
 </script>

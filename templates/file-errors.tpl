@@ -20,8 +20,9 @@
       <button id="nextPage">Next</button>
     </div>
     {foreach $errorsByFile as $entry}
-      <details class="file file-block" data-file-block="true" data-file="{$entry.fileKey}" open>
+      <details class="file file-block" data-file-block="true" data-file="{$entry.fileKey}" data-file-name="{$entry.file}" open>
         <summary class="file-header">
+          <button class="copy-btn" type="button" title="Copy file name" data-copy-file="true">Copy</button>
           <span class="badge" data-file-count="true">{$entry.count} issues</span>
           <h3>{$entry.file}</h3>
         </summary>

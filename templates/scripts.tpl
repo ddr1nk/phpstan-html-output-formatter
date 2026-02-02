@@ -37,6 +37,7 @@
     const filterInput = document.getElementById('filterText');
     const sizeSelect = document.getElementById('pageSize');
     let current = 1;
+    let totalPages = 1;
     const prev = document.getElementById('prevPage');
     const next = document.getElementById('nextPage');
     const info = document.getElementById('pageInfo');
@@ -73,7 +74,7 @@
     const render = () => {
       const pageSize = parseInt(sizeSelect.value, 10) || 50;
       const visible = applyFilter();
-      const totalPages = Math.max(1, Math.ceil(visible.length / pageSize));
+      totalPages = Math.max(1, Math.ceil(visible.length / pageSize));
       if (current > totalPages) current = totalPages;
       const start = (current - 1) * pageSize;
       const end = start + pageSize;

@@ -28,7 +28,7 @@
     h3 { font-size: 16px; margin: 0 0 10px; }
     .muted { color: var(--muted); }
     .summary { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-top: 16px; }
-    .summary-grid { display: grid; gap: 16px; grid-template-columns: 2fr 1fr; margin-top: 24px; }
+    .summary-grid { display: grid; gap: 16px; grid-template-columns: 2fr 3fr; margin-top: 24px; }
     .card { padding: 14px 16px; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; }
     .card strong { display: block; font-size: 20px; }
     .chart-wrap { display: grid; gap: 16px; grid-template-columns: minmax(220px, 1fr) 2fr; align-items: start; }

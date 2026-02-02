@@ -1,3 +1,5 @@
 services:
     errorFormatter.html:
         class: DDr1nk\PhpstanHtmlOutputFormatter\HtmlErrorFormatter
+        arguments:
+            level: %parameters.level%

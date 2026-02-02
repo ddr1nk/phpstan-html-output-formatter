@@ -3,7 +3,7 @@
 {include file="head.tpl" title=$title}
 <body>
   <div class="container">
-    {include file="header.tpl" title=$title subtitle=$subtitle}
+    {include file="header.tpl" title=$title subtitle=$subtitle levelLabel=$levelLabel generatedAt=$generatedAt}
     {include file="summary-cards.tpl"
       totalErrors=$totalErrors
       totalFilesWithErrors=$totalFilesWithErrors

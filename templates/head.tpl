@@ -22,7 +22,7 @@
       background: var(--bg);
       color: var(--text);
     }
-    .container { max-width: 1100px; margin: 0 auto; padding: 32px 20px 64px; }
+    .container { max-width: 100%; margin: 0 auto; padding: 32px 24px 64px; }
     h1 { font-size: 24px; margin: 0 0 12px; }
     h2 { font-size: 18px; margin: 32px 0 12px; }
     h3 { font-size: 16px; margin: 0 0 10px; }

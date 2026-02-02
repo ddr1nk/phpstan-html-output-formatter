@@ -7,9 +7,9 @@
       <input id="filterText" type="text" placeholder="Filter by file, message, identifier...">
       <label class="muted">Page size
         <select id="pageSize">
-          <option value="10">10</option>
+          <option value="10" selected>10</option>
           <option value="20">20</option>
-          <option value="50" selected>50</option>
+          <option value="50">50</option>
           <option value="100">100</option>
         </select>
       </label>
@@ -20,7 +20,7 @@
       <button id="nextPage">Next</button>
     </div>
     {foreach $errorsByFile as $entry}
-      <details class="file" data-file-block="true" data-file="{$entry.fileKey}">
+      <details class="file file-block" data-file-block="true" data-file="{$entry.fileKey}" open>
         <summary class="file-header">
           <span class="badge" data-file-count="true">{$entry.count} issues</span>
           <h3>{$entry.file}</h3>

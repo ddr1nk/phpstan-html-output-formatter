@@ -7,6 +7,7 @@
     const labels = {/literal}{$errorTypeLabelsJson nofilter}{literal};
     const data = {/literal}{$errorTypeDataJson nofilter}{literal};
     if (labels.length === 0) return;
+    if (typeof Chart === 'undefined') return;
     new Chart(ctx, {
       type: "doughnut",
       data: {
@@ -31,7 +32,7 @@
     });
   })();
   (function () {
-    const blocks = Array.from(document.querySelectorAll('[data-file-block="true"]'));
+    const blocks = Array.from(document.querySelectorAll('.file-block'));
     if (blocks.length === 0) return;
     const filterInput = document.getElementById('filterText');
     const sizeSelect = document.getElementById('pageSize');
@@ -39,6 +40,7 @@
     const prev = document.getElementById('prevPage');
     const next = document.getElementById('nextPage');
     const info = document.getElementById('pageInfo');
+    if (!filterInput || !sizeSelect || !prev || !next || !info) return;
     const normalize = (value) => value.toLowerCase().trim();
     const applyFilter = () => {
       const query = normalize(filterInput.value);
@@ -60,7 +62,7 @@
         block.style.display = showBlock ? 'block' : 'none';
         const badge = block.querySelector('[data-file-count]');
         if (badge) {
-          badge.textContent = `${visibleCount} issues`;
+          badge.textContent = String(visibleCount) + ' issues';
         }
         if (showBlock) {
           visible.push(block);
@@ -78,7 +80,7 @@
       visible.forEach((el, idx) => {
         el.style.display = idx >= start && idx < end ? 'block' : 'none';
       });
-      info.textContent = `Page ${current} of ${totalPages} (${visible.length} files)`;
+      info.textContent = 'Page ' + current + ' of ' + totalPages + ' (' + visible.length + ' files)';
       prev.disabled = current <= 1;
       next.disabled = current >= totalPages;
     };

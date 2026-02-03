@@ -13,7 +13,7 @@ composer require --dev ddr1nk/phpstan-html-output-formatter
 Generate HTML report:
 
 ```bash
-vendor/bin/phpstan analyse --error-format=html > phpstan-report.html
+vendor/bin/phpstan analyse --error-format=html
 ```
 
 You can also set it in your PHPStan config:
